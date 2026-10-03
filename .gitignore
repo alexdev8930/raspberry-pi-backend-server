@@ -1,0 +1,19 @@
+# Ignore compiled binaries
+webserver
+myserver
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Ignore OS metadata
+.DS_Store
+.directory
+
+# Ignore temporary Go workspace test files
+*.test
+*.prof
+
+# Ignore IDE folders
+/.vscode
