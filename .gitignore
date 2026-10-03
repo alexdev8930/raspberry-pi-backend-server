@@ -1,6 +1,4 @@
 # Ignore compiled binaries
-webserver
-myserver
 *.exe
 *.exe~
 *.dll
