@@ -30,5 +30,5 @@ See [docs/architecture.md](docs/architecture.md) for how the backend components 
 
 ### Software
 - Raspberry Pi OS (64-bit Lite recommended)
-- Go 1.22 or higher on the build machine
+- Go 1.25 or higher on the build machine
 - GPIO access for the account running the backend, such as access to `/dev/gpiomem`
