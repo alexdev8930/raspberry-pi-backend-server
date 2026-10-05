@@ -1,6 +1,10 @@
-# Raspberry Pi Backend Server
+# Koala - Raspberry Pi Backend Server
 
-This is a Go backend for a separate frontend. The frontend sends it requests, the backend talks to Raspberry Pi hardware, and then sends results or device data back over HTTP/JSON.
+Koala is a Go backend server designed to run on a Raspberry Pi. A separate frontend can send HTTP/JSON requests to the backend, which can communicate with Raspberry Pi hardware and return device data or operation results.
+
+For example, a frontend could request an action such as turning an LED or motor on or off, and Koala would handle the corresponding GPIO operation.
+
+I might add a frontend to this project in the future.
 
 This could also be used as a backend server template.
 
