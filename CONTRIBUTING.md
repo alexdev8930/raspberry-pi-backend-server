@@ -1,6 +1,6 @@
 # Contributing Guide
 
-Thank you for helping build the Raspberry Pi Backend! 
+Thank you for helping build this Raspberry Pi Backend Server! 
 
 ## Code Style & Architecture
 - **Keep `cmd/` thin:** The main entry point should only handle initialization and startup.
