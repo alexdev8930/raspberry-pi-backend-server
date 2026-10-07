@@ -1,3 +1,3 @@
-module github.com/alexdev8930/raspberry-pi-backend-server
+module rpi-backend.local
 
 go 1.25.0
