@@ -12,10 +12,10 @@ Integrations sit behind interfaces owned by the backend. A device adapter commun
 
 A request moves from the frontend to an HTTP handler, then to the service responsible for the operation. The service validates the request and performs the required work, using integrations when needed. The result returns through the handler as a JSON response.
 
-Invalid input produces a client error. Requests that lack permission produce an authorization error, and unexpected failures produce a server error. Responses do not include internal details or secrets.
+Invalid input produces a client error. Requests that fail authentication or authorization checks should be rejected when those checks are implemented, and unexpected failures produce a server error. Responses do not include internal details or secrets.
 
 ## Trust and data
 
 The backend treats frontend requests as untrusted. When accounts or shared access are supported, the backend verifies the caller's identity and permission. For operations targeting a device, a device ID identifies the target but does not grant access to it.
 
-Credentials and other secrets are kept out of source control. Application data is stored when required by a feature, with credentials protected at rest. Connections from outside the local network use HTTPS and a secure remote-access setup.
+Credentials and other secrets should not be committed to source control. Applications that store sensitive data should use appropriate protections for stored credentials and data. Deployments exposed beyond a trusted local network should use HTTPS and a secure remote-access configuration.
