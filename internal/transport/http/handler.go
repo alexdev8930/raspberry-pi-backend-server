@@ -1,7 +1,13 @@
 package httptransport
 
-type Handler struct{}
+import "rpi-backend.local/internal/service"
 
-func NewHandler() *Handler {
-	return &Handler{}
+type Handler struct {
+	svc *service.Service
+}
+
+func NewHandler(svc *service.Service) *Handler {
+	return &Handler{
+		svc: svc,
+	}
 }

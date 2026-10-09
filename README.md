@@ -22,9 +22,10 @@ This could also be used as a backend server template.
 - `deploy/systemd/` - files for running the backend as a service
 - `test/integration/` - tests for parts working together
 
-The project is just a starting layout right now. so lots of things are still not done
+Still in active dev so somthings might not be done or implemented yet.
 
-See [docs/architecture.md](docs/architecture.md) for how the backend components fit together.
+See [docs/architecture.md](docs/architecture.md) for how the backend components fit together.  
+see [CHANGELOG.md](CHANGELOG.md) for everything I've done so far.
 
 ## Recommended Hardware and Software
 

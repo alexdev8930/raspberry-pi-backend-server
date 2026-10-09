@@ -2,18 +2,14 @@ package main
 
 import (
 	"log"
-	"net/http"
-
-	httptransport "rpi-backend.local/internal/transport/http"
+	"rpi-backend.local/internal/app"
+	"rpi-backend.local/internal/config"
 )
 
 func main() {
-	handler := httptransport.NewHandler()
-	server := &http.Server{
-		Addr:    ":8080",
-		Handler: handler.Routes(),
+	cfg := config.Load()
+	a := app.New(cfg)
+	if err := a.Run(); err != nil {
+		log.Fatal(err)
 	}
-
-	log.Println("server listening on :8080")
-	log.Fatal(server.ListenAndServe())
 }
