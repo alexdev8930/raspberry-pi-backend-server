@@ -1,12 +1,12 @@
 # Raspberry Pi Backend Server
 
-This is a Go backend server designed to run on a Raspberry Pi. A separate frontend can send HTTP/JSON requests to the backend, which can communicate with Raspberry Pi hardware and return device data or operation results.
+This is a general purpose Go backend server designed to run on a Raspberry Pi. It provides an HTTP/JSON API for communication between a frontend and the backend, with support for interacting with Raspberry Pi hardware.
 
-For example, a frontend could request an action such as turning an LED or motor on or off, and This backend would handle the corresponding GPIO operation.
+For example, a frontend can send requests to control an LED or motor, and the backend handles the corresponding GPIO operations.
 
-I might add a frontend to this project in the future.
+The project can serve as a reusable Go backend template for building other applications.
 
-This could also be used as a backend server template.
+A frontend may be added to this project in the future.
 
 ## Project structure
 
